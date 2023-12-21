@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Proxy Rablo</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Ficamos felizes em te receber!</h1>
+    <p>Use com sabedoria e não cometa crimes</p>
+    <form action="/proxy" method="GET">
+        <label for="url">Insira o link que deseja acessar:</label><br>
+        <input type="text" id="url" name="url" placeholder="https://www.example.com" required><br><br>
+        <input type="submit" value="Go">
+    </form>
+</body>
+</html>

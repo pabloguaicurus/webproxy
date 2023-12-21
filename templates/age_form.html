@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Verificação de Idade</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Verificação de Idade</h1>
+    <form action="/set_age" method="POST">
+        <label for="age">Digite sua idade (NÃO MINTA!):</label>
+        <input type="number" id="age" name="age" min="1" required>
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>
